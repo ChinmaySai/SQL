@@ -1,0 +1,64 @@
+SQL commands are instructions used to communicate with the database.
+SQL can perform specific taks like create a table, add data to tables, drop the table, modify the table, set permission for users.
+
+There are five types of SQL commands: DDL, DML, DCL, TCL, and DQL.
+
+Data Definition Language (DDL)
+CREATE 
+ALTER 
+DROP
+TRUNCATE
+
+Data Manipulation Language (DML)
+INSERT
+UPDATE
+DELETE
+
+Data Control Language (DCL)
+GRANT
+REVOKE
+
+Transaction Control Language (TCL)
+COMMIT
+ROLLBACK
+SAVEPOINT
+
+Data Query Language (DQL)
+SELECT
+
+create database Chinmay; -- Created a database with name as Chinmay
+show databases; 
+Data Definition Language (DDL):
+CREATE 
+It is used to create a new table in the database.
+Syntax:
+1. CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]); 
+Example:
+1. CREATE TABLE EMPLOYEE(Name VARCHAR2(20), Email VARCHAR2(100), DOB DATE); 
+
+b. DROP:
+ It is used to delete both the structure and record stored in the table.
+Syntax
+1. DROP TABLE ; 
+Example
+1. DROP TABLE EMPLOYEE; 
+
+c.ALTER:
+ It is used to alter the structure of the database. This change could be either to modify the characteristics of an existing 
+attribute or probably to add a new attribute.
+Syntax:
+To add a new column in the table
+1. ALTER TABLE table_name ADD column_name COLUMN-definition; 
+To modify existing column in the table:
+1. ALTER TABLE MODIFY(COLUMN DEFINITION....); 
+EXAMPLE
+1. ALTER TABLE STU_DETAILS ADD(ADDRESS VARCHAR2(20)); 
+2. ALTER TABLE STU_DETAILS MODIFY (NAME VARCHAR2(20)); 
+
+d. TRUNCATE:
+It is used to delete all the rows from the table and free the space containing the table.
+Syntax:
+1. TRUNCATE TABLE table_name; 
+Example:
+1. TRUNCATE TABLE EMPLOYEE;
+
