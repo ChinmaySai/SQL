@@ -104,4 +104,25 @@ SELECT * FROM CUSTOMERS where SALARY LIKE '2___3';
 Fetch the first 3 records of the table
 SELECT * FROM CUSTOMERS LIMIT 3;
 
+ORDER BY:
+
+
+SELECT * FROM CUSTOMERS ORDER BY salary;
+
+2	Khilan	 25	Delhi	    1500.00
+1	Ramesh	 32	Ahmedabad	2000.00
+3	kaushik	 23	Kota	    2000.00
+4	Chaitali 25	Mumbai	    6500.00
+5	Hardik	 27	Bhopal	    8500.00
+7	Muffy	 24	Indore	   10000.00
+				
+SELECT * FROM CUSTOMERS ORDER BY SALARY,NAME;
+
+2	Khilan	 25	Delhi	   1500.00
+3	kaushik	 23	Kota	   2000.00
+1	Ramesh	 32	Ahmedabad  2000.00
+4	Chaitali 25	Mumbai	   6500.00
+5	Hardik	 27	Bhopal	   8500.00
+7	Muffy	 24	Indore	  10000.00
+
 
