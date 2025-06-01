@@ -50,7 +50,7 @@ Syntax:
 To add a new column in the table
 1. ALTER TABLE table_name ADD column_name COLUMN-definition; 
 To modify existing column in the table:
-1. ALTER TABLE MODIFY(COLUMN DEFINITION....); 
+1. ALTER TABLE table_name MODIFY(COLUMN DEFINITION....); 
 EXAMPLE
 1. ALTER TABLE STU_DETAILS ADD(ADDRESS VARCHAR2(20)); 
 2. ALTER TABLE STU_DETAILS MODIFY (NAME VARCHAR2(20)); 
